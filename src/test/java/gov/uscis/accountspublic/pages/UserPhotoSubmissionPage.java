@@ -10,7 +10,7 @@ import gov.uscis.accountspublic.helpers.Utilities;
 public class UserPhotoSubmissionPage extends BasePageObject {
 	
 	private static final By ANUMBER_FIELD = By.id("aNumber");
-	private static final By FILE_UPLOAD = By.xpath("//button[contains(text(), 'Select File')]");
+	private static final By FILE_UPLOAD = By.xpath("//input[@type='file']");
 	private static final By SUBMIT_BUTTON = By.xpath("//button[contains(text(), 'Submit')]");
 	
 	@Override
@@ -38,7 +38,7 @@ public class UserPhotoSubmissionPage extends BasePageObject {
 	public void uploadFile(String photoSubmissionData) {
 		if (photoSubmissionData != null) {
 			JsonObject photoSubmissionDataJson = Utilities.getJsonObjectFromJsonObject(getJsonData(),photoSubmissionData);
-			upload(photoSubmissionDataJson.get("Photo file").getAsString()).to(findElement(FILE_UPLOAD));
+			upload("src/test/resources/test-data/"+ photoSubmissionDataJson.get("Photo File").getAsString()).to(findElement(FILE_UPLOAD));
 		}
 	}
 	
