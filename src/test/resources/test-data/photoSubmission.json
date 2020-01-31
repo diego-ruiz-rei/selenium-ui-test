@@ -1,0 +1,17 @@
+{
+  "Valid Photo Submission Details" : {
+    "aNumber" : "1234567",
+    "fileToUpload" : "test.jpg"
+  },
+  
+   "Invalid aNumber Details" : {
+    "aNumber" : "123456789",
+    "fileToUpload" : "test.jpg"
+   },
+   
+   "Invalid photo File format Details" : {
+    "aNumber" : "1234567",
+    "fileToUpload" : "test.xls"
+   }
+   
+}
