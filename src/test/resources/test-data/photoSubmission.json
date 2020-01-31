@@ -1,0 +1,22 @@
+{
+  "Valid Photo Submission Details" : {
+    "aNumber" : "1234567",
+    "Photo File" : "test.jpg"
+  },
+  
+   "Invalid aNumber Details" : {
+    "aNumber" : "123456789",
+    "Photo File" : "test.jpg"
+   },
+   
+   "Matching Photo Details" : {
+   	  "aNumber" : "5975018",
+   	  "Photo File" : "PhotoImage.jpg"
+   },
+   
+   "Mismatching Photo Details" : {
+   	  "aNumber" : "7612514",
+   	  "Photo File" : "InvalidPhotoImage.jpg"
+   }
+   
+}
