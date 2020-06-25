@@ -7,7 +7,7 @@ import gov.uscis.accountspublic.cucumber.TestDataFile;
 import org.junit.runner.RunWith;
 
 @CucumberOptions(plugin = { "pretty" , "html:target/Runner.html" },
-        tags = {"@accountspublic", "~@wip"},
+        tags = {"@runTest", "~@wip"},
         features = {
 			"src/test/resources/features/",
 				},
