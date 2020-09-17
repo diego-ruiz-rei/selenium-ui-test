@@ -9,7 +9,7 @@ import gov.uscis.accountspublic.helpers.Utilities;
 
 public class UserPhotoSubmissionPage extends BasePageObject {
 	
-	private static final By ANUMBER_FIELD = By.id("main-message");
+	private static final By ANUMBER_FIELD = By.id("title");
 	private static final By FILE_UPLOAD = By.xpath("//input[@type='file']");
 	private static final By SUBMIT_BUTTON = By.xpath("//button[contains(text(), 'Submit')]");
 	
